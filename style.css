@@ -1,9 +1,11 @@
 /*General*/
 body{font-family: 'Raleway', sans-serif; 
   margin: 0;
+  background-color: white;
+  
 }
 
-.page{margin: 0 20px 0 20px;
+.page{margin: 0 40px 0 40px;
 }
 
 .filtreTexteIcons {
@@ -28,8 +30,16 @@ body{font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-start;
+  align-items:flex-start;} 
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+
 }
+
 
 .flexColumnAround {
   display: flex;
@@ -64,18 +74,7 @@ body{font-family: 'Raleway', sans-serif;
 .clrGris {
   color: #f2f2f2;
 }
-.bckBleu {
-  background-color: #0065fc;
-}
-.bckBleuCl {
-  background-color: #deebff;
-}
-.bckGris {
-  background-color: #f2f2f2;
-}
-.sizeNav {
-  height: 00px;
-}
+
 
 /* NAV */
 nav{
@@ -102,15 +101,73 @@ nav{
 }
  /*fin de Nav*/
  
+
  /*Header*/
+ .iconSize {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+  background:#f2f2f2
+}
 
+
+#search{
+  height:50px;
+  border:2px solid #f2f2f2;
+}
+
+.researche{
+  height: 50px;
+  width: 100px;
+  background: #0065fc;
+  color: white;
+  border-radius: 0 10px 10px 0;
+
+}
+
+.filtre{
+  height: 50px;
+  width:850px;
+  margin-top: 20px;
+}
  
+.filtre div{
+  margin: 0 10px 0 10px;  
+}
 
 
+.filtreIcons {
+  margin-right: -30px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.icons-text {
+  height: 45px;
+  padding-right: 10px;
+  padding-left: 30px;
+  border:3px solid #f2f2f2;
+  border-radius: 0 25px 25px 0;
+  border-left: transparent;
+
+}
 
 .info {
   display: flex;
   align-items: center;
+}
+
+.infoicon{
+  
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+  
 }
 
 /**/
