@@ -1,0 +1,116 @@
+/*General*/
+body{font-family: 'Raleway', sans-serif; 
+  margin: 0;
+}
+
+.page{margin: 0 20px 0 20px;
+}
+
+.filtreTexteIcons {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.flexColumnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexColumnBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texteGras {
+  font-weight: bold;
+}
+
+.decorationNone {
+  text-decoration: none;
+}
+.borderNone {
+  border: none;
+}
+
+.texteGras {
+  font-weight: bold;
+}
+.clrBleu {
+  color: #0065fc;
+}
+.clrBleuCl {
+  color: #deebff;
+}
+.clrGris {
+  color: #f2f2f2;
+}
+.bckBleu {
+  background-color: #0065fc;
+}
+.bckBleuCl {
+  background-color: #deebff;
+}
+.bckGris {
+  background-color: #f2f2f2;
+}
+.sizeNav {
+  height: 00px;
+}
+
+/* NAV */
+nav{
+  margin-top: 20px;
+  
+}
+.flexColumnBetween li,a{
+  text-decoration: none;
+  list-style-type: none
+}
+
+.flexColumnBetween a{
+  margin: 0px 20px 0 30px;
+  color:#0065fc
+}
+
+.flexColumnBetween a:hover{
+  padding-top: 20px;
+  border-top: 2px solid #0065fc; 
+}
+
+#activity{
+  color: rgb(34, 34, 34);
+}
+ /*fin de Nav*/
+ 
+ /*Header*/
+
+ 
+
+
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+/**/

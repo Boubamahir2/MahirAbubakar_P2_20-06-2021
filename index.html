@@ -1,58 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
-  <title>Reservia</title>
-</head>
-<body>
-  <div class="page">
-
-    <!--Nav-->
-    <nav>
-      <div class="logo">
-        <img src="images/logo/Reservia@3x.png" alt="logo">
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li><a href="#">Hébergement</a></li>
-          <li><a href="#">Activtés</a></li>
-          <li><a href="#">S'incrire</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--la fin de nav-->
-
-    <!--#HEADER-->
-    <header>
-      <div class="Hébergement">
-        <div>
-          <h1 class="texteGras">
-            Trouvez votre hébergements pour vos vacances de rêve
-          </h1>
-          <p>En plein centre ville ou en pleine nature</p>
+  <head>
+    <script src="https://kit.fontawesome.com/f71066e879.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservia</title>
+  </head>
+  <body>
+    <div class="page">
+      <!--Nav-->
+      <nav class="flexColumnBetween flexCentre ">
+        <div class="logo">
+          <img src="images/logo/Reservia@3x.png" alt="logo" width="100px"
+          height="40px" />
         </div>
 
-        <div class="researche-bar">
-          
+
+        <div class="">
+          <ul class="flexColumnBetween texteGras ">
+            <li><a href="#">Hébergement</a></li>
+            <li><a id="activity" href="#">Activtés</a></li>
+            <li><a href="#">S'incrire</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--la fin de nav-->
+
+      <!--#HEADER-->
+      <header class ="flexColumn">
+        <div class="flexColumn">
+          <div>
+            <h1 class="texteGras">
+              Trouvez votre hébergements pour vos vacances de rêve
+            </h1>
+            <p>En plein centre ville ou en pleine nature</p>
+          </div>
+
+          <!--bar researche-->
+          <div class="flexCentre ">
+            <div class="maps">
+              <img src="images/2x/outline_location_on_black_24dp.png" alt="" />
+            </div>
+
+            <div>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                value="Marseille, France"
+              />
+            </div>
+
+            <div>
+              <label for="search" class=" ">Recherche</label>
+            </div>
+          </div>
+      <!--fin bar researche-->
+
+      <!--#Filtre-->
+          <div class="filtre texteGras">
+            <h3 class="texteGras">Filtre</h3>
+
+            <div class="">
+              <i
+                class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"
+              ></i>
+              <div class="filtreIcons flexCentre ">Economique</div>
+            </div>
+
+            <div >
+              <i
+                class="fas fa-child fa-lg filtreIcons flexCentre"
+              ></i>
+              <div class="filtreIcons flexCentre ">Familial</div>
+            </div>
+
+            <div>
+              <i
+                class="fas fa-heart fa-lg filtreIcons flexCentre"
+              ></i>
+              <div class="filtreIcons flexCentre ">Romantique</div>
+            </div>
+
+            <div>
+              <i
+                class="fas fa-dog filtreIcons flexCentre"
+              ></i>
+              <div class="filtreIcons flexCentre ">Animaux autrisér</div>
+            </div>
+
+          </div>
+      <!--fin filtre-->
+
+      <!--Infos-->
+          <div class="info">
+            <div>
+              <i class="fas fa-info fa-xs colorBleu"></i>
+            </div>
+            <p>
+              Plus de 500 logements sont disponibles dans cette Ville
+            </p>
+          </div>
+      <!--fin info -->
 
         </div>
-        
+      </header>
 
 
 
-      </div>
-    </header>
-    <!---->
-    <!---->
-
-
-  </div>
-</body>
+      <!---->
+      <!---->
+    </div>
+  </body>
 </html>
