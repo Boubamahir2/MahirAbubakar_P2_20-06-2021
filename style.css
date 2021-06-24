@@ -1,17 +1,18 @@
 /*General*/
 body{font-family: 'Raleway', sans-serif; 
+  font-weight: 600;
   margin: 0;
   background-color: white;
   width: 100%;
+ 
 }
 
 :root {
   --clrBleu: #0065fc;
   --clrGris:#f2f2f2 ;
   --clrBleuCl:#deebff ;
-
+  --clrGrisfonce:#d1cece;
 }
-
 
 
 /* NAV */
@@ -26,14 +27,19 @@ nav{
 }
 
 .flexColumnBetween a{
+  padding:0 20px 0 20px;
   margin: 0px 20px 0 30px;
   color:var(--clrBleu)
 }
 
 .flexColumnBetween a:hover{
+  
   padding-top: 20px;
-  border-top: 2px solid var(--clrBleu); 
+  border-top: 2px solid var(--clrBleu);
+  width: 160px; 
 }
+
+
 
 #activity{
   color: rgb(34, 34, 34);
@@ -46,14 +52,40 @@ nav{
   height: 50px;
   width: 50px;
   border-radius: 10px 0 0 10px;
-  background:var(--clrGris)
+  background:var(--clrGris);
+  cursor: pointer
 }
 
 
 #search{
   height:50px;
   border:2px solid var(--clrGris);
+
 }
+
+.vacances h1{
+  margin-bottom: 10px;
+
+}
+.vacances p{
+  margin:0px 0 20px 0;
+  padding-top:0;
+
+}
+
+.bloc-fas{
+  border-radius: 25px;
+  cursor: pointer;
+}
+.bloc-fas:hover{
+  transform:scale(1.1);
+  color:var(--clrBleu);
+  background-color:#f2f2f2;
+  
+}
+
+
+
 
 .researche{
   height: 50px;
@@ -61,7 +93,14 @@ nav{
   background: var(--clrBleu);
   color: white;
   border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
 
+}
+
+.researche:hover{
+  background: var(--clrBleuCl);
+  color: var(--clrBleu);
 }
 
 .filtre{
@@ -71,9 +110,9 @@ nav{
 }
  
 .filtre div{
-  margin: 0 10px 0 10px;  
+  margin: 0 10px 0 10px; 
+ 
 }
-
 
 .filtreIcons {
   margin-right: -30px;
@@ -181,6 +220,12 @@ nav{
 }
 .clrGris {
   color: var(--clrGris);
+
+}
+
+.clrGrisfonce {
+  color: var(--clrGrisfonce);
+
 }
 
 
@@ -239,7 +284,9 @@ nav{
     
   }
 
-
+h4{
+  background-color: #bebbbb;
+}
 
 
   .auberge{
@@ -450,7 +497,7 @@ nav{
     flex: 1;
     width: 450px;
     height:600px;
-    margin:20px 40px 40px 40px;
+    margin:20px 40px 40px 0px;
     border-radius: 20px;
     background:white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -466,11 +513,12 @@ nav{
     flex: 1;
     width: 450px;
     height:600px;
-    margin:20px 40px 40px 40px;
+    margin:20px 28px 40px 40px;
   
   }
 
   .Îles-Frioules{
+    height: 220px;;
     border-radius: 20px;
     background:white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -480,6 +528,7 @@ nav{
     transform:scale(1.1)
   }
   .Notre-Dame{
+    height: 220px;;
     border-radius: 20px;
     background:white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -489,6 +538,7 @@ nav{
     transform:scale(1.1)
   }
   .Fort-Pomégues{
+    height: 340px;
     border-radius: 20px;
     background:white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -502,6 +552,7 @@ nav{
 
   .Parc-Longchamp{
     border-radius: 20px;
+    height: 340px;
     background:white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
     cursor: pointer;
@@ -539,16 +590,25 @@ nav{
   }
   
 
+  .activites-h3{
+
+    padding: 0;
+    margin: 10px 0 20px 40px;
+  }
+
   .Vieux-Port img{
     width:100%;
-    height: 550px;
+    height: 530px;
     border-radius: 20px 20px 0 0;
     
   }
 
+
+
+
   .Fort-Pomégues img{
     width:100%;
-    height: 300px;
+    height: 280px;
     border-radius: 20px 20px 0 0;
     
 
@@ -556,28 +616,28 @@ nav{
 
   .Îles-Frioules img{
     width:100%;
-    height: 170px;
+    height: 160px;
     border-radius: 20px 20px 0 0;
     
 
   }
   .Parc-Calanques img{
     width:100%;
-    height:  550px;
+    height:  530px;
     border-radius: 20px 20px 0 0;
     cursor: pointer;
   }
 
   .Notre-Dame img{
     width:100%;
-    height: 170px;
+    height: 160px;
     border-radius: 20px 20px 0 0;
     
   }
 
   .Parc-Longchamp img{
     width:100%;
-    height: 300px;
+    height: 280px;
     border-radius: 20px 20px 0 0;
     
   }
@@ -589,14 +649,16 @@ nav{
   }
 
   .activité{
+    margin-left: 0;
+    padding-left: 0;
     width:1850px;
     display:flex;
     justify-content:space-between;
   }
 
   .Activites{
-    margin:0;
-    padding: 0;
+    /*margin:0;
+    padding: 0;*/
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -615,8 +677,9 @@ nav{
     margin-top: 70px;
     padding: 20px;
     height: 120px;
-    width: 1903px;
+    width: 1863px; ;
     background: var(--clrGris);
+    overflow: hidden;
   }
 
   .footer{
@@ -634,5 +697,40 @@ nav{
   .tailleBlocFoot{
     padding: 0 150px 0 150px;
     
+  }
 
+  .divLienFoot a{
+    color: rgb(56, 56, 56);
+    padding-top:10px;
+    font-weight: 500;
+
+  }
+
+
+  @media screen and (max-width: 500px){
+    .nav{
+
+      width: 360px;
+      height: 100px;
+      position: relative;
+      flex-flow: column;
+      display: flex;
+      
+      flex-direction: column;
+    }
+
+    .nav ul{
+      position:absolute;
+      flex-flow:column;
+    }
+
+    .logo{
+      position:absolute;
+      left: 0px;
+      bottom: 20;
+    }
+
+
+    
+    
   }
